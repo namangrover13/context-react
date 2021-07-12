@@ -1,4 +1,5 @@
-import { alpha } from '@material-ui/core/styles'
+import { alpha, fade } from '@material-ui/core/styles'
+import { Fade } from '@material-ui/core';
 const styles = theme => ({
     root: {
         width: "100%",
@@ -20,9 +21,9 @@ const styles = theme => ({
     serach: {
         position: "relative",
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
+        backgroundColor: fade(theme.palette.common.white, 0.15),
         "&:hover": {
-            backgroundColor: alpha(theme.palette.common.white, 0.25)
+            backgroundColor: fade(theme.palette.common.white, 0.25)
         },
         marginLeft:0,
         width: "100%",
